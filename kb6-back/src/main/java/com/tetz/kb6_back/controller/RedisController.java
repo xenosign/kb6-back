@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.concurrent.TimeUnit;
 
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping("/api/rest")
 @RequiredArgsConstructor
 public class RedisController {
     private final RedisService redisService;
