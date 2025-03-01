@@ -1,27 +1,279 @@
-2025-02-26T21:31:42.066+09:00  INFO 9400 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : Starting Kb6BackApplication using Java 17.0.11 with PID 9400 (D:\git\kb6-back\kb6-back\build\classes\java\main started by lhs in D:\git\kb6-back)
-2025-02-26T21:31:42.069+09:00  INFO 9400 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-02-26T21:31:42.791+09:00  INFO 9400 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-02-26T21:31:42.794+09:00  INFO 9400 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-26T21:31:42.977+09:00  INFO 9400 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 163 ms. Found 1 JPA repository interface.
-2025-02-26T21:31:42.993+09:00  INFO 9400 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-02-26T21:31:42.995+09:00  INFO 9400 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-02-26T21:31:43.008+09:00  INFO 9400 --- [kb6-back] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tetz.kb6_back.repository.UserSQLRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-02-26T21:31:43.009+09:00  INFO 9400 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2025-02-26T21:31:43.569+09:00  INFO 9400 --- [kb6-back] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-02-26T21:31:43.579+09:00  INFO 9400 --- [kb6-back] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-02-26T21:31:43.579+09:00  INFO 9400 --- [kb6-back] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-02-26T21:31:43.639+09:00  INFO 9400 --- [kb6-back] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-02-26T21:31:43.640+09:00  INFO 9400 --- [kb6-back] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1514 ms
-2025-02-26T21:31:43.793+09:00  INFO 9400 --- [kb6-back] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-26T21:31:43.844+09:00  INFO 9400 --- [kb6-back] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-02-26T21:31:43.876+09:00  INFO 9400 --- [kb6-back] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-02-26T21:31:44.158+09:00  INFO 9400 --- [kb6-back] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-26T21:31:44.189+09:00  INFO 9400 --- [kb6-back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-02-26T21:31:44.334+09:00  INFO 9400 --- [kb6-back] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a82bc58
-2025-02-26T21:31:44.336+09:00  INFO 9400 --- [kb6-back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-02-26T21:31:44.370+09:00  WARN 9400 --- [kb6-back] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-26T21:31:44.372+09:00  WARN 9400 --- [kb6-back] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-02-26T21:31:44.391+09:00  INFO 9400 --- [kb6-back] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-03-01T17:09:07.477+09:00  INFO 5144 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : Starting Kb6BackApplication using Java 17.0.11 with PID 5144 (D:\git\kb6-back\kb6-back\build\classes\java\main started by lhs in D:\git\kb6-back)
+2025-03-01T17:09:07.488+09:00  INFO 5144 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-01T17:09:08.160+09:00  INFO 5144 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-01T17:09:08.162+09:00  INFO 5144 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-01T17:09:08.292+09:00  INFO 5144 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 2 JPA repository interfaces.
+2025-03-01T17:09:08.305+09:00  INFO 5144 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-01T17:09:08.307+09:00  INFO 5144 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-01T17:09:08.321+09:00  INFO 5144 --- [kb6-back] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tetz.kb6_back.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-01T17:09:08.321+09:00  INFO 5144 --- [kb6-back] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tetz.kb6_back.repository.UserSQLRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-01T17:09:08.321+09:00  INFO 5144 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-03-01T17:09:08.829+09:00  INFO 5144 --- [kb6-back] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-01T17:09:08.839+09:00  INFO 5144 --- [kb6-back] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-01T17:09:08.840+09:00  INFO 5144 --- [kb6-back] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-01T17:09:08.903+09:00  INFO 5144 --- [kb6-back] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-01T17:09:08.904+09:00  INFO 5144 --- [kb6-back] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1363 ms
+2025-03-01T17:09:09.070+09:00  INFO 5144 --- [kb6-back] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-01T17:09:09.127+09:00  INFO 5144 --- [kb6-back] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-03-01T17:09:09.164+09:00  INFO 5144 --- [kb6-back] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-01T17:09:09.505+09:00  INFO 5144 --- [kb6-back] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-01T17:09:09.538+09:00  INFO 5144 --- [kb6-back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-01T17:09:10.665+09:00  WARN 5144 --- [kb6-back] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2025-03-01T17:09:10.665+09:00 ERROR 5144 --- [kb6-back] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-03-01T17:09:10.666+09:00  WARN 5144 --- [kb6-back] [main] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata
+
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.tetz.kb6_back.Kb6BackApplication.main(Kb6BackApplication.java:10) ~[main/:na]
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	... 35 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	... 48 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	... 51 common frames omitted
+
+2025-03-01T17:09:10.692+09:00  WARN 5144 --- [kb6-back] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-01T17:09:10.693+09:00  WARN 5144 --- [kb6-back] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-01T17:09:10.703+09:00  INFO 5144 --- [kb6-back] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (null)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-01T17:09:11.297+09:00  INFO 5144 --- [kb6-back] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-01T17:09:11.314+09:00  INFO 5144 --- [kb6-back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-01T17:09:12.328+09:00  WARN 5144 --- [kb6-back] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 0, SQLState: 08S01
+2025-03-01T17:09:12.329+09:00 ERROR 5144 --- [kb6-back] [main] o.h.engine.jdbc.spi.SqlExceptionHelper   : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2025-03-01T17:09:12.332+09:00 ERROR 5144 --- [kb6-back] [main] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+2025-03-01T17:09:12.333+09:00  WARN 5144 --- [kb6-back] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+2025-03-01T17:09:12.335+09:00  INFO 5144 --- [kb6-back] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-01T17:09:12.346+09:00  INFO 5144 --- [kb6-back] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-01T17:09:12.359+09:00 ERROR 5144 --- [kb6-back] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.tetz.kb6_back.Kb6BackApplication.main(Kb6BackApplication.java:10) ~[main/:na]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:431) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 15 common frames omitted
+Caused by: org.hibernate.exception.JDBCConnectionException: Unable to open JDBC Connection for DDL execution [Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:74) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:39) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcConnection(ImprovedExtractionContextImpl.java:63) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.tool.schema.internal.exec.ImprovedExtractionContextImpl.getJdbcDatabaseMetaData(ImprovedExtractionContextImpl.java:70) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.tool.schema.extract.internal.InformationExtractorJdbcDatabaseMetaDataImpl.processTableResultSet(InformationExtractorJdbcDatabaseMetaDataImpl.java:65) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.tool.schema.extract.internal.AbstractInformationExtractorImpl.getTables(AbstractInformationExtractorImpl.java:570) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl.getTablesInformation(DatabaseInformationImpl.java:122) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:72) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at java.base/java.util.HashMap.forEach(HashMap.java:1421) ~[na:na]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.2.jar:6.2.2]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.2.jar:6.2.2]
+	... 19 common frames omitted
+Caused by: com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:175) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:446) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:239) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:188) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:na]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:na]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl.getIsolatedConnection(DdlTransactionIsolatorNonJtaImpl.java:46) ~[hibernate-core-6.6.5.Final.jar:6.6.5.Final]
+	... 40 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:62) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:150) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:166) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:945) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:815) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	... 53 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: getsockopt
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:633) ~[na:na]
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:153) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63) ~[mysql-connector-j-8.0.33.jar:8.0.33]
+	... 56 common frames omitted
+
+2025-03-01T17:09:50.557+09:00  INFO 13980 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : Starting Kb6BackApplication using Java 17.0.11 with PID 13980 (D:\git\kb6-back\kb6-back\build\classes\java\main started by lhs in D:\git\kb6-back)
+2025-03-01T17:09:50.561+09:00  INFO 13980 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-01T17:09:51.251+09:00  INFO 13980 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-01T17:09:51.253+09:00  INFO 13980 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-01T17:09:51.379+09:00  INFO 13980 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 2 JPA repository interfaces.
+2025-03-01T17:09:51.394+09:00  INFO 13980 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-03-01T17:09:51.395+09:00  INFO 13980 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-03-01T17:09:51.409+09:00  INFO 13980 --- [kb6-back] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tetz.kb6_back.repository.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-01T17:09:51.409+09:00  INFO 13980 --- [kb6-back] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tetz.kb6_back.repository.UserSQLRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2025-03-01T17:09:51.409+09:00  INFO 13980 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2025-03-01T17:09:51.917+09:00  INFO 13980 --- [kb6-back] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-01T17:09:51.927+09:00  INFO 13980 --- [kb6-back] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-01T17:09:51.927+09:00  INFO 13980 --- [kb6-back] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-03-01T17:09:51.993+09:00  INFO 13980 --- [kb6-back] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-01T17:09:51.993+09:00  INFO 13980 --- [kb6-back] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1385 ms
+2025-03-01T17:09:52.150+09:00  INFO 13980 --- [kb6-back] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-01T17:09:52.201+09:00  INFO 13980 --- [kb6-back] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
+2025-03-01T17:09:52.235+09:00  INFO 13980 --- [kb6-back] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-01T17:09:52.499+09:00  INFO 13980 --- [kb6-back] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-01T17:09:52.525+09:00  INFO 13980 --- [kb6-back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-01T17:09:52.668+09:00  INFO 13980 --- [kb6-back] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fb48970
+2025-03-01T17:09:52.670+09:00  INFO 13980 --- [kb6-back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-01T17:09:52.711+09:00  WARN 13980 --- [kb6-back] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-01T17:09:52.712+09:00  WARN 13980 --- [kb6-back] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-01T17:09:52.729+09:00  INFO 13980 --- [kb6-back] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0
@@ -29,128 +281,559 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-02-26T21:31:44.991+09:00  INFO 9400 --- [kb6-back] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-26T21:31:45.029+09:00  INFO 9400 --- [kb6-back] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-26T21:31:45.467+09:00  WARN 9400 --- [kb6-back] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26T21:31:45.834+09:00  INFO 9400 --- [kb6-back] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-02-26T21:31:45.843+09:00  INFO 9400 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : Started Kb6BackApplication in 4.377 seconds (process running for 4.718)
-2025-02-26T21:31:50.378+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-26T21:31:50.378+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-02-26T21:31:50.379+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-02-26T21:31:50.412+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : 시작: Redis vs MySQL 성능 비교 테스트 (데이터 수: 1)
-2025-02-26T21:31:50.844+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : Redis 저장 시간: 350 ms
-2025-02-26T21:31:50.844+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : MySQL 저장 시간: 80 ms
-2025-02-26T21:31:50.844+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : 저장 속도 비율: MySQL/Redis = 0.22857142857142856
-2025-02-26T21:31:50.881+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : Redis 조회 시간: 28 ms
-2025-02-26T21:31:50.881+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : MySQL 조회 시간: 4 ms
-2025-02-26T21:31:50.881+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : 조회 속도 비율: MySQL/Redis = 0.14285714285714285
-2025-02-26T21:31:50.881+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : 대량 데이터 개별 조회 테스트 시작...
-2025-02-26T21:31:50.888+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : Redis 대량 조회 시간: 0 ms
-2025-02-26T21:31:50.888+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : MySQL 대량 조회 시간: 0 ms
-2025-02-26T21:31:50.888+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : 대량 조회 속도 비율: MySQL/Redis = NaN
-2025-02-26T21:31:50.888+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : MySQL 전체 조회 테스트 시작...
-2025-02-26T21:31:50.967+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : MySQL 전체 조회 시간: 73 ms
-2025-02-26T21:31:50.968+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-2] c.t.k.service.PerformanceTestService     : 테스트 완료!
-2025-02-26T21:32:30.265+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : 시작: Redis vs MySQL 성능 비교 테스트 (데이터 수: 10000)
-2025-02-26T21:32:58.923+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : Redis 저장 시간: 1244 ms
-2025-02-26T21:32:58.923+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : MySQL 저장 시간: 27413 ms
-2025-02-26T21:32:58.923+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : 저장 속도 비율: MySQL/Redis = 22.036173633440516
-2025-02-26T21:33:18.354+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : Redis 조회 시간: 999 ms
-2025-02-26T21:33:18.354+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : MySQL 조회 시간: 3595 ms
-2025-02-26T21:33:18.354+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : 조회 속도 비율: MySQL/Redis = 3.5985985985985987
-2025-02-26T21:33:18.354+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : 대량 데이터 개별 조회 테스트 시작...
-2025-02-26T21:34:10.857+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : Redis 대량 조회 시간: 796 ms
-2025-02-26T21:34:10.857+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : MySQL 대량 조회 시간: 5359 ms
-2025-02-26T21:34:10.857+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : 대량 조회 속도 비율: MySQL/Redis = 6.732412060301508
-2025-02-26T21:34:10.857+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : MySQL 전체 조회 테스트 시작...
-2025-02-26T21:35:16.801+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : MySQL 전체 조회 시간: 106 ms
-2025-02-26T21:35:16.802+09:00  INFO 9400 --- [kb6-back] [http-nio-8080-exec-5] c.t.k.service.PerformanceTestService     : 테스트 완료!
-2025-02-26T21:36:38.688+09:00  INFO 9508 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : Starting Kb6BackApplication using Java 17.0.11 with PID 9508 (D:\git\kb6-back\kb6-back\build\classes\java\main started by lhs in D:\git\kb6-back)
-2025-02-26T21:36:38.691+09:00  INFO 9508 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-02-26T21:36:39.430+09:00  INFO 9508 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-02-26T21:36:39.433+09:00  INFO 9508 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-26T21:36:39.570+09:00  INFO 9508 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 1 JPA repository interface.
-2025-02-26T21:36:39.585+09:00  INFO 9508 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-02-26T21:36:39.586+09:00  INFO 9508 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-02-26T21:36:39.598+09:00  INFO 9508 --- [kb6-back] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tetz.kb6_back.repository.UserSQLRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-02-26T21:36:39.599+09:00  INFO 9508 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-2025-02-26T21:36:40.140+09:00  INFO 9508 --- [kb6-back] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-02-26T21:36:40.151+09:00  INFO 9508 --- [kb6-back] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-02-26T21:36:40.151+09:00  INFO 9508 --- [kb6-back] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-02-26T21:36:40.221+09:00  INFO 9508 --- [kb6-back] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-02-26T21:36:40.221+09:00  INFO 9508 --- [kb6-back] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1477 ms
-2025-02-26T21:36:40.374+09:00  INFO 9508 --- [kb6-back] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-26T21:36:40.428+09:00  INFO 9508 --- [kb6-back] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-02-26T21:36:40.463+09:00  INFO 9508 --- [kb6-back] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-02-26T21:36:40.748+09:00  INFO 9508 --- [kb6-back] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-26T21:36:40.776+09:00  INFO 9508 --- [kb6-back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-02-26T21:36:40.931+09:00  INFO 9508 --- [kb6-back] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19d27c27
-2025-02-26T21:36:40.933+09:00  INFO 9508 --- [kb6-back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-02-26T21:36:40.970+09:00  WARN 9508 --- [kb6-back] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-26T21:36:40.972+09:00  WARN 9508 --- [kb6-back] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-02-26T21:36:40.993+09:00  INFO 9508 --- [kb6-back] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-02-26T21:36:41.624+09:00  INFO 9508 --- [kb6-back] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-26T21:36:41.662+09:00  INFO 9508 --- [kb6-back] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-26T21:36:42.120+09:00  WARN 9508 --- [kb6-back] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26T21:36:42.572+09:00  INFO 9508 --- [kb6-back] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-02-26T21:36:42.583+09:00  INFO 9508 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : Started Kb6BackApplication in 4.339 seconds (process running for 4.688)
-2025-02-26T21:36:47.715+09:00  INFO 4364 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : Starting Kb6BackApplication using Java 17.0.11 with PID 4364 (D:\git\kb6-back\kb6-back\build\classes\java\main started by lhs in D:\git\kb6-back)
-2025-02-26T21:36:47.719+09:00  INFO 4364 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : No active profile set, falling back to 1 default profile: "default"
-2025-02-26T21:36:48.399+09:00  INFO 4364 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-02-26T21:36:48.400+09:00  INFO 4364 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-02-26T21:36:48.537+09:00  INFO 4364 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 118 ms. Found 1 JPA repository interface.
-2025-02-26T21:36:48.553+09:00  INFO 4364 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
-2025-02-26T21:36:48.555+09:00  INFO 4364 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-02-26T21:36:48.568+09:00  INFO 4364 --- [kb6-back] [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tetz.kb6_back.repository.UserSQLRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
-2025-02-26T21:36:48.569+09:00  INFO 4364 --- [kb6-back] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-2025-02-26T21:36:49.132+09:00  INFO 4364 --- [kb6-back] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-02-26T21:36:49.146+09:00  INFO 4364 --- [kb6-back] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-02-26T21:36:49.147+09:00  INFO 4364 --- [kb6-back] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-02-26T21:36:49.214+09:00  INFO 4364 --- [kb6-back] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-02-26T21:36:49.214+09:00  INFO 4364 --- [kb6-back] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1444 ms
-2025-02-26T21:36:49.369+09:00  INFO 4364 --- [kb6-back] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-02-26T21:36:49.425+09:00  INFO 4364 --- [kb6-back] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.5.Final
-2025-02-26T21:36:49.463+09:00  INFO 4364 --- [kb6-back] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-02-26T21:36:49.752+09:00  INFO 4364 --- [kb6-back] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-02-26T21:36:49.783+09:00  INFO 4364 --- [kb6-back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-02-26T21:36:49.929+09:00  INFO 4364 --- [kb6-back] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57b1ec84
-2025-02-26T21:36:49.931+09:00  INFO 4364 --- [kb6-back] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-02-26T21:36:49.964+09:00  WARN 4364 --- [kb6-back] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-02-26T21:36:49.964+09:00  WARN 4364 --- [kb6-back] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-02-26T21:36:49.980+09:00  INFO 4364 --- [kb6-back] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 8.0
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-02-26T21:36:50.620+09:00  INFO 4364 --- [kb6-back] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-02-26T21:36:50.655+09:00  INFO 4364 --- [kb6-back] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-02-26T21:36:51.099+09:00  WARN 4364 --- [kb6-back] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-02-26T21:36:51.480+09:00  INFO 4364 --- [kb6-back] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-02-26T21:36:51.489+09:00  INFO 4364 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : Started Kb6BackApplication in 4.227 seconds (process running for 4.604)
-2025-02-26T21:37:02.908+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-02-26T21:37:02.908+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-02-26T21:37:02.910+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2025-02-26T21:37:02.967+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : 시작: Redis vs MySQL 성능 비교 테스트 (데이터 수: 1000)
-2025-02-26T21:37:06.763+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : Redis 저장 시간: 728 ms
-2025-02-26T21:37:06.764+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : MySQL 저장 시간: 3066 ms
-2025-02-26T21:37:06.764+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : 저장 속도 비율: MySQL/Redis = 4.211538461538462
-2025-02-26T21:37:08.168+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : Redis 조회 시간: 263 ms
-2025-02-26T21:37:08.168+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : MySQL 조회 시간: 444 ms
-2025-02-26T21:37:08.168+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : 조회 속도 비율: MySQL/Redis = 1.688212927756654
-2025-02-26T21:37:08.169+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : 대량 데이터 개별 조회 테스트 시작...
-2025-02-26T21:37:10.950+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : Redis 대량 조회 시간: 145 ms
-2025-02-26T21:37:10.951+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : MySQL 대량 조회 시간: 355 ms
-2025-02-26T21:37:10.951+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : 대량 조회 속도 비율: MySQL/Redis = 2.4482758620689653
-2025-02-26T21:37:10.951+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : MySQL 전체 조회 테스트 시작...
-2025-02-26T21:37:13.394+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : MySQL 전체 조회 시간: 296 ms
-2025-02-26T21:37:13.394+09:00  INFO 4364 --- [kb6-back] [http-nio-8080-exec-1] c.t.k.service.PerformanceTestService     : 테스트 완료!
+2025-03-01T17:09:53.360+09:00  INFO 13980 --- [kb6-back] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-01T17:09:53.426+09:00  INFO 13980 --- [kb6-back] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-01T17:09:53.630+09:00  INFO 13980 --- [kb6-back] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-03-01T17:09:54.333+09:00  WARN 13980 --- [kb6-back] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-01T17:09:54.723+09:00  INFO 13980 --- [kb6-back] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-01T17:09:54.732+09:00  INFO 13980 --- [kb6-back] [main] com.tetz.kb6_back.Kb6BackApplication     : Started Kb6BackApplication in 4.6 seconds (process running for 4.92)
+2025-03-01T17:10:22.020+09:00  INFO 13980 --- [kb6-back] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-01T17:10:22.021+09:00  INFO 13980 --- [kb6-back] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-01T17:10:22.022+09:00  INFO 13980 --- [kb6-back] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-01T17:10:22.045+09:00  WARN 13980 --- [kb6-back] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-03-01T17:10:51.424+09:00  WARN 13980 --- [kb6-back] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2025-03-01T17:11:08.665+09:00  WARN 13980 --- [kb6-back] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.tetz.kb6_back.entity.Product> com.tetz.kb6_back.controller.LockTestController.initProduct(java.util.Map<java.lang.String, java.lang.Object>)]
+2025-03-01T17:12:12.421+09:00  WARN 13980 --- [kb6-back] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'multipart/form-data;boundary=--------------------------287967159521435795768924;charset=UTF-8' is not supported]
+2025-03-01T17:13:48.043+09:00  WARN 13980 --- [kb6-back] [http-nio-8080-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'stock' for method parameter type int is not present]
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-96] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-22] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-28] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-17] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-23] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-7] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-3] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-2] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-13] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-6] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-97] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-90] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.494+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-5] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.495+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-10] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.495+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-1] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.496+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-11] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.496+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-12] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.496+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-8] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.496+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-15] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.497+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-16] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.497+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-14] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.498+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-21] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.498+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-26] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.498+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-29] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.498+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-19] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.500+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-38] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.500+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-37] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.500+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-30] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.500+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-35] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.500+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-36] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.501+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-40] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.502+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-44] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.502+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-47] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.502+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-42] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.502+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-43] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.502+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-45] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.503+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-46] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.504+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-27] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.504+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-52] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.504+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-51] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.504+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-49] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.504+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-50] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.505+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-33] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.506+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-56] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.506+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-48] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.506+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-58] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.506+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-55] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.506+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-57] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.506+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-53] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.508+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-62] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.508+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-63] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.508+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-61] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.508+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-64] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.508+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-54] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.509+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-60] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.509+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-66] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.510+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-59] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.510+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-68] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.510+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-67] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.510+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-69] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.510+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-70] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.511+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-75] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.512+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-73] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.512+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-78] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.512+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-77] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.513+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-79] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.513+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-84] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.513+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-74] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.513+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-81] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.515+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-92] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.515+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-71] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.515+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-87] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.515+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-86] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.516+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-82] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.516+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-65] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.517+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-91] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.517+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-93] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.518+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-4] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.519+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-9] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.519+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-72] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.521+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-98] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.521+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-99] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.521+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-89] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.521+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-32] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.522+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-39] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.523+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-34] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.524+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-83] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.525+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-31] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.524+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-95] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.525+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-25] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.526+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-18] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.526+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-41] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.526+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-100] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.531+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-88] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 1
+2025-03-01T17:15:27.557+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-16] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.557+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-22] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.557+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-21] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.558+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-1] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.559+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-30] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.559+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-96] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.560+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-23] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.560+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-15] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.560+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-8] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.561+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-12] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.561+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-13] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.566+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-90] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.566+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-5] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.566+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-40] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.567+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-57] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.567+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-55] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.568+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-17] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.573+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-58] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.574+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-26] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.574+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-52] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.574+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-51] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.574+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-33] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.574+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-66] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.576+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-50] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.576+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-7] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.576+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-2] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.576+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-3] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.577+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-97] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.579+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-36] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.582+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-11] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.584+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-45] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.585+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-6] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.585+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-19] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.585+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-38] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.585+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-78] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.586+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-39] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.587+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-29] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.588+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-46] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.589+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-44] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.590+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-79] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.591+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-42] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.596+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-64] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.598+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-27] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.602+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-54] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.602+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-84] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.604+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-49] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.606+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-47] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.608+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-81] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.608+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-93] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.608+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-75] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.609+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-98] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.609+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-70] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.609+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-92] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.609+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-63] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.612+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-9] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.616+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-4] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.618+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-22] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.618+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-96] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.619+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-61] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.619+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-53] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.619+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-31] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.620+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-74] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.621+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-82] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.621+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-37] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.622+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-56] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.623+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-99] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.623+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-65] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.623+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-62] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.623+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-87] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.626+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-32] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.631+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-67] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.633+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-91] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.633+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-86] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.633+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-69] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.634+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-68] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.635+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-23] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.635+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-17] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.637+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-16] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.638+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-30] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.642+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-55] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.642+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-58] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.643+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-51] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.643+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-50] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.643+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-15] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.647+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-3] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.648+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-40] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.648+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-13] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.650+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-57] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.650+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-78] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.651+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-39] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.651+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-79] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.651+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-1] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.651+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-38] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.651+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-46] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.652+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-97] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.657+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-66] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.660+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-29] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.660+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-12] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.660+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-33] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.661+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-41] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.662+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-11] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.665+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-44] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.665+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-26] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.665+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-10] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.674+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-5] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.675+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-81] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.675+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-75] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.676+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-64] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.678+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-27] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.680+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-36] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.681+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-19] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.683+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-25] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.684+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-71] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.692+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-100] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.693+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-47] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.693+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-54] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.693+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-62] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.693+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-31] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.693+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-77] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.694+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-96] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.694+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-83] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.698+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-93] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.702+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-98] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.702+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-70] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.704+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-99] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.704+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-87] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.704+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-9] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.706+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-30] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.708+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-7] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.713+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-61] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.713+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-56] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.713+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-89] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.713+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-69] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.714+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-72] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.714+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-37] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.715+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-86] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.715+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-79] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.715+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-84] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.718+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-40] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.719+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-88] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.719+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-42] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.719+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-48] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.719+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-91] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.719+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-67] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.721+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-38] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.723+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-17] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.725+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-46] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.725+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-16] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.725+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-12] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.726+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-68] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.726+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-22] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.727+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-58] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.729+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-51] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.729+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-1] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.729+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-3] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.730+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-50] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.730+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-57] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.732+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-23] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.734+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-32] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.734+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-81] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.734+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-4] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.734+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-29] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.734+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-64] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.735+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-18] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.735+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-78] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.736+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-11] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.736+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-55] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.737+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-75] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.737+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-95] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 2
+2025-03-01T17:15:27.739+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-8] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.739+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-65] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.740+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-27] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.742+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-41] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.743+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-74] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.746+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-26] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.746+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-97] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.745+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-44] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.749+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-2] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.749+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-13] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.749+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-25] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.750+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-53] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.750+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-71] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.754+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-5] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.756+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-10] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.759+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-19] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.760+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-82] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.763+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-31] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.763+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-93] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.764+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-62] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.766+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-9] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.769+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-36] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.770+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-70] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.770+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-83] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.770+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-98] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.770+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-54] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.780+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-47] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.781+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-87] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.782+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-100] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.786+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-56] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.786+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-86] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.787+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-61] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.795+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-89] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.795+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-37] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.797+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-72] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.797+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-77] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.797+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-69] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.803+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-58] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.806+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-38] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.809+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-16] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.810+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-22] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.811+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-68] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.811+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-78] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.812+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-67] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.812+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-42] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.814+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-3] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.820+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-17] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.821+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-65] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.822+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-74] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.822+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-46] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.826+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-29] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.827+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-8] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.830+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-7] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.830+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-95] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.831+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-12] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.831+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-44] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.831+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-57] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.832+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-79] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.833+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-41] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.834+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-1] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.834+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-55] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.835+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-50] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.836+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-27] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.839+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-93] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.842+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-97] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.842+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-23] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.843+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-51] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.844+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-70] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.844+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-64] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.844+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-11] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.846+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-13] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.847+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-87] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.850+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-81] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.851+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-4] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.851+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-9] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.852+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-91] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.853+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-48] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.853+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-36] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.853+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-83] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.853+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-75] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.853+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-53] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.855+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-98] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.859+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-2] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.859+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-86] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.860+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-61] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.861+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-54] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.861+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-62] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.861+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-88] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.863+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-58] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.864+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-16] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.864+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-22] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.863+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-38] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.864+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-56] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.864+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-31] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.865+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-78] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.865+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-32] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.865+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-18] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 3
+2025-03-01T17:15:27.867+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-82] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.869+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-30] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.874+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-17] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.874+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-46] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.878+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-3] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.881+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-47] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.882+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-37] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.885+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-77] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.885+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-68] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.886+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-100] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.886+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-89] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.886+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-69] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.887+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-67] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.887+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-65] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.887+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-42] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.888+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-74] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.889+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-12] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.889+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-72] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.889+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-57] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.889+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-29] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.890+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-1] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.891+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-93] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.891+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-79] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.891+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-44] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.895+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-11] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.895+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-50] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.894+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-27] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.896+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-70] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.896+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-64] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.895+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-55] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.898+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-13] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.899+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-87] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.899+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-8] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.899+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-41] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.899+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-95] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.902+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-9] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.902+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-81] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.904+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-36] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.905+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-51] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.905+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-23] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.906+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-98] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.906+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-75] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.906+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-97] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.911+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-86] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.912+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-61] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.914+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-83] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.914+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-91] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.914+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-4] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.914+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-53] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.926+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-54] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.927+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-30] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.926+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-56] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.926+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-31] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.927+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-62] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.935+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-32] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.935+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-88] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.935+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-18] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 4
+2025-03-01T17:15:27.944+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-42] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.944+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-74] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.944+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-67] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.944+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-69] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.944+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-68] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.944+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-65] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.945+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-37] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.945+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-47] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.951+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-41] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.952+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-72] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.952+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-89] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.952+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-77] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:27.959+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-8] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.975+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-53] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.975+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-4] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.975+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-83] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.975+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-91] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:27.990+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-32] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:28.000+09:00  INFO 13980 --- [kb6-back] [pool-3-thread-18] c.t.k.s.OptimisticLockProductService     : Optimistic lock exception occurred. Retry count: 5
+2025-03-01T17:15:28.006+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-89] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:28.006+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-77] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:28.006+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-72] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:28.056+09:00 ERROR 13980 --- [kb6-back] [pool-3-thread-18] c.t.k.s.OptimisticLockProductService     : Error in optimistic lock thread: Failed to decrease stock after 5 retries
+2025-03-01T17:15:28.059+09:00  INFO 13980 --- [kb6-back] [http-nio-8080-exec-10] c.t.k.s.OptimisticLockProductService     : Optimistic lock test completed. Duration: 681ms, Success: 43, Fail: 57
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-12] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-34] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-91] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-23] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-22] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-37] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-21] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-54] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-60] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-2] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-19] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-65] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-63] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-77] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-89] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-78] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-36] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-27] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-81] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-64] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-31] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-99] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-68] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-40] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-26] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-83] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-84] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-70] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-18] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-86] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-7] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-90] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-29] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-17] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-44] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-57] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-10] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-25] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-82] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-67] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-38] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-96] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-8] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-80] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-95] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-56] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-55] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-88] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-87] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-49] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-24] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-100] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-47] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-4] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-98] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-28] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-9] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-48] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-85] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-13] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-5] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-52] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-71] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-39] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-3] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-69] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-94] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-73] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-53] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-33] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-30] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-75] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-50] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-43] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-97] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-92] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-14] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-76] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-79] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-45] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.146+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-32] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-61] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-51] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-11] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-41] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-1] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-74] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-59] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-46] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-15] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.147+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-93] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-58] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-42] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-35] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-72] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-66] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-62] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-6] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-16] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.148+09:00 ERROR 13980 --- [kb6-back] [pool-4-thread-20] c.t.k.s.PessimisticLockProductService    : Error in pessimistic lock thread: Query requires transaction be in progress, but no transaction is known to be in progress
+2025-03-01T17:15:28.150+09:00  INFO 13980 --- [kb6-back] [http-nio-8080-exec-10] c.t.k.s.PessimisticLockProductService    : Pessimistic lock test completed. Duration: 90ms, Success: 0, Fail: 100
