@@ -5,7 +5,9 @@ import com.tetz.kb6_back.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.transaction.support.TransactionTemplate;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -18,9 +20,10 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class PessimisticLockProductService implements AbstractProductService {
 
     private final ProductRepository productRepository;
+    private final TransactionTemplate transactionTemplate; // 추가: 프로그래밍 방식 트랜잭션 관리
 
     @Override
-    @Transactional
+    @Transactional(propagation = Propagation.REQUIRES_NEW)
     public void decreaseStock(Long productId, int quantity) {
         // 비관적 락을 사용하여 상품 조회
         Product product = productRepository.findByIdWithPessimisticWriteLock(productId)
@@ -46,7 +49,17 @@ public class PessimisticLockProductService implements AbstractProductService {
         for (int i = 0; i < threadCount; i++) {
             executor.submit(() -> {
                 try {
-                    decreaseStock(productId, quantity);
+                    // 프로그래밍 방식으로 트랜잭션을 시작하여 각 스레드가 명시적인 트랜잭션 내에서 실행되도록 함
+                    transactionTemplate.execute(status -> {
+                        try {
+                            decreaseStock(productId, quantity);
+                            return true;
+                        } catch (Exception e) {
+                            status.setRollbackOnly();
+                            throw e;
+                        }
+                    });
+
                     successCount.incrementAndGet();
                 } catch (Exception e) {
                     failCount.incrementAndGet();

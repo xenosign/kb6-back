@@ -115,6 +115,7 @@ public class LockTestController {
                 .version(0L)
                 .build();
         optimisticProduct = productRepository.save(optimisticProduct);
+        Long optimisticProductId = optimisticProduct.getId();
 
         // 비관적 락 테스트용 상품 생성
         Product pessimisticProduct = Product.builder()
@@ -123,20 +124,35 @@ public class LockTestController {
                 .version(0L)
                 .build();
         pessimisticProduct = productRepository.save(pessimisticProduct);
+        Long pessimisticProductId = pessimisticProduct.getId();
 
-        // 낙관적 락 테스트 수행
+        // 낙관적 락 테스트 수행 - 스레드 수를 줄이거나 배치 크기 조정 고려
         long optimisticDuration = optimisticLockService.performanceTest(
-                optimisticProduct.getId(), quantity, threadCount);
+                optimisticProductId, quantity, threadCount);
+
+        // 테스트 결과 조회하기 전에 시스템이 안정화될 시간 부여
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
 
         // 비관적 락 테스트 수행
         long pessimisticDuration = pessimisticLockService.performanceTest(
-                pessimisticProduct.getId(), quantity, threadCount);
+                pessimisticProductId, quantity, threadCount);
+
+        // 테스트 결과 조회하기 전에 시스템이 안정화될 시간 부여
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+        }
 
         // 테스트 결과 조회
-        Product optimisticAfterTest = productRepository.findById(optimisticProduct.getId())
+        Product optimisticAfterTest = productRepository.findById(optimisticProductId)
                 .orElseThrow(() -> new RuntimeException("Product not found"));
 
-        Product pessimisticAfterTest = productRepository.findById(pessimisticProduct.getId())
+        Product pessimisticAfterTest = productRepository.findById(pessimisticProductId)
                 .orElseThrow(() -> new RuntimeException("Product not found"));
 
         Map<String, Object> result = new HashMap<>();
